@@ -88,6 +88,11 @@ service:
         primary: false
         port: '{{ .Values.pms.config.relayPort | default "32499" }}'
         protocol: TCP
+      dlna:
+        enabled: true
+        primary: false
+        port: '{{ .Values.pms.config.dlnaPort | default "32469" }}'
+        protocol: TCP
 
 {{ if .Values.pms.ingressConfig.enabled }}
 ingress:
