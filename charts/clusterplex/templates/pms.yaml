@@ -93,6 +93,11 @@ service:
         primary: false
         port: '{{ .Values.pms.config.dlnaPort | default "32469" }}'
         protocol: TCP
+      ssdp:
+        enabled: true
+        primary: false
+        port: '{{ .Values.pms.config.ssdpPort | default "1900" }}'
+        protocol: UDP
 
 {{ if .Values.pms.ingressConfig.enabled }}
 ingress:

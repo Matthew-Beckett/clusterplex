@@ -143,6 +143,9 @@ pms:
     # -- The port that the DLNA service will run on
     dlnaPort: 32469
 
+    # -- The port that the DLNA service will run on
+    ssdpPort: 1900
+
   # -- Configure the kubernetes service associated with the the PMS component
   # @default -- See below
   serviceConfig:
